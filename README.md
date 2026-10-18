@@ -233,3 +233,7 @@ git push -u origin main
 ```
 
 `data/` 和 `artifacts/*.joblib` 已被 `.gitignore` 排除，不会把大数据文件或模型二进制误传到 GitHub；`reports/` 中的指标与图片会保留，便于招聘方直接查看结果。
+
+## License
+
+本项目采用 [MIT License](LICENSE)。
