@@ -1,0 +1,95 @@
+{
+  "model_version": "0.1.0",
+  "trained_at_utc": "2026-10-18T16:21:15+00:00",
+  "seed": 42,
+  "rows": 6000,
+  "anomaly_rate": 0.18,
+  "split_sizes": {
+    "train": 3600,
+    "validation": 1200,
+    "test": 1200
+  },
+  "threshold": 0.48499999999999993,
+  "data_fingerprint": "3dbf565f07aef538",
+  "sklearn_version": "1.9.1",
+  "baseline": {
+    "threshold": 0.6749999999999999,
+    "precision": 0.9490740740740741,
+    "recall": 0.9490740740740741,
+    "f1": 0.9490740740740741,
+    "roc_auc": 0.9972523336344474,
+    "pr_auc": 0.9893639700616389,
+    "confusion_matrix": [
+      [
+        973,
+        11
+      ],
+      [
+        11,
+        205
+      ]
+    ]
+  },
+  "main": {
+    "threshold": 0.48499999999999993,
+    "precision": 0.9587155963302753,
+    "recall": 0.9675925925925926,
+    "f1": 0.9631336405529954,
+    "roc_auc": 0.9987390846130684,
+    "pr_auc": 0.9944411064310937,
+    "confusion_matrix": [
+      [
+        975,
+        9
+      ],
+      [
+        7,
+        209
+      ]
+    ]
+  },
+  "root_cause": {
+    "macro_f1": 0.9812836004395807,
+    "weighted_f1": 0.9814861953719024,
+    "top2_accuracy": 1.0,
+    "per_class": {
+      "crash_loop": {
+        "precision": 0.975609756097561,
+        "recall": 0.975609756097561,
+        "f1": 0.975609756097561,
+        "support": 41
+      },
+      "disk_pressure": {
+        "precision": 1.0,
+        "recall": 0.9795918367346939,
+        "f1": 0.9896907216494846,
+        "support": 49
+      },
+      "image_pull_failed": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1": 0.9876543209876543,
+        "support": 40
+      },
+      "network_timeout": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9772727272727273,
+        "f1": 0.9772727272727273,
+        "support": 44
+      },
+      "oom_killed": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9761904761904762,
+        "f1": 0.9761904761904762,
+        "support": 42
+      }
+    }
+  },
+  "root_cause_classes": [
+    "crash_loop",
+    "disk_pressure",
+    "image_pull_failed",
+    "network_timeout",
+    "oom_killed"
+  ]
+}
