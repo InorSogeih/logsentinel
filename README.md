@@ -1,5 +1,7 @@
 # LogSentinel
 
+[![CI](https://github.com/InorSogeih/logsentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/InorSogeih/logsentinel/actions/workflows/ci.yml)
+
 面向 AI Infra 场景的日志异常检测与根因分类项目。输入一个短时间窗口内的 Pod 日志与资源指标，输出是否异常、异常分数以及最可能的根因类别。
 
 这个项目不是简单的“分类 demo”，而是一条可复现的机器学习交付链路：数据生成、日志模板归一化、特征工程、基线/主模型对比、概率校准、阈值选择、PR-AUC 评估、FastAPI 推理、Docker 和 CI。
